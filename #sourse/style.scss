@@ -1,0 +1,110 @@
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin: 0;
+}
+
+h2,
+h3,
+h4,
+p,
+hr {
+    margin: 0;
+}
+
+.about-us {
+    background-color: #0F0F10;
+    &__wrap {
+        width: 75%;
+        margin: auto;
+    }
+    .text-head {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 61px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__head.text-head.text-yellow {
+        padding: 122px 0 0 0;
+        margin: 0 224px 0 0;
+        color: #FAFF00;
+        text-align: center;
+    }
+    &__head.about-us__head_white.text-head {
+        margin: -24px 0 0 137px;
+        text-align: center;
+    }
+    &__wrap-col {
+        display: flex;
+        justify-content: space-between;
+        margin: 84px 0 0 0;
+    }
+    &__col {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        margin: 132px 0 0 0;
+    }
+    &__line {
+        margin: 0 0 44px 0;
+    }
+    &__content {
+        width: 480px;
+    }
+    &__label {
+        background: linear-gradient(180deg, #FAFF00 0%, #E9EE00 100%);
+        box-shadow: 0px 4px 40px rgba(249, 255, 5, 0.3);
+        transform: skewX(-20deg);
+        padding: 20px 73px;
+        max-width: 598px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 100;
+        bottom: 80px;
+        left: 50%;
+        transform: translate(-50%) skewX(-20deg);
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #060606;
+        transform: skewX(20deg);
+        margin: 0 0 12px 0;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #060606;
+        transform: skewX(20deg);
+    }
+}
+
+.text-yellow {
+    color: #FAFF00;
+}
+
+.text-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.text-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #DCDBDB;
+}
