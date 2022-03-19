@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 h2,
 h3,
 h4,
@@ -518,6 +522,7 @@ ul {
   line-height: 44px;
   text-transform: uppercase;
   color: #080808;
+  margin: 0 0 0 30px;
 }
 
 .level {
