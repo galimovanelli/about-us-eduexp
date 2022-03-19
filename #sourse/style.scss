@@ -13,6 +13,14 @@ ul {
     margin: 0;
 }
 
+.mobile-version {
+    display: none;
+}
+
+.desctop-version {
+    display: block;
+}
+
 .about-us {
     background-color: #0F0F10;
     &__wrap {
@@ -55,8 +63,9 @@ ul {
     }
     &__line {
         margin: 0 0 44px 0;
-        height: 1px;
-        color: #D8D8D8;
+        height: 0;
+        border: none;
+        border-top: 1px solid #D8D8D8;
     }
     &__content {
         width: 480px;
@@ -71,11 +80,6 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // position: absolute;
-        // z-index: 100;
-        // bottom: 80px;
-        // left: 50%;
-        // transform: translate(-50%, 0) skewX(-20deg);
         margin: -200px auto 0 auto;
     }
     &__name {
@@ -121,7 +125,6 @@ ul {
 .number-one {
     background-color: #FFF;
     &__wrap {
-        // width: 75%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -144,17 +147,19 @@ ul {
         display: flex;
         flex-direction: column;
         align-self: flex-end;
+        overflow: hidden;
     }
     &__title {
         margin: 175px 0 0 0;
     }
     &__line {
         margin: 0 0 37px 0;
-        height: 1px;
-        color: #080808;
+        height: 0;
+        border: none;
+        border-top: 1px solid #080808;
     }
     &__desctiption {
-        width: 480px;
+        max-width: 480px;
         color: #080808;
         margin: 0 0 175px 0;
     }
@@ -167,8 +172,9 @@ ul {
     }
     &__line {
         margin: 0 0 37px 0;
-        height: 1px;
-        color: #D8D8D8;
+        height: 0;
+        border: none;
+        border-top: 1px solid #D8D8D8;
         width: 710px;
     }
     &__content {
@@ -334,8 +340,9 @@ ul {
     background-color: #0F0F10;
     &__line {
         margin: 0 0 37px 0;
-        height: 1px;
-        color: #080808;
+        height: 0;
+        border: none;
+        border-top: 1px solid #D8D8D8;
         width: 710px;
     }
     &__content {
@@ -372,7 +379,6 @@ ul {
 }
 
 .text-contour {
-    // -webkit-text-stroke: 2px #000000;
     text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
     color: #fff;
 }
@@ -391,8 +397,9 @@ ul {
     }
     &__line {
         width: 993px;
-        height: 1px;
-        color: #080808;
+        height: 0;
+        border: none;
+        border-top: 1px solid #080808;
         margin: 16px 0 0 0;
     }
     &__brand {
@@ -417,6 +424,7 @@ ul {
         line-height: 44px;
         text-transform: uppercase;
         color: #080808;
+        margin: 0 0 0 30px;
     }
 }
 
@@ -427,13 +435,14 @@ ul {
         justify-content: space-between;
     }
     &__line {
-        height: 1px;
-        color: #D8D8D8;
-        width: 710px;
+        height: 0;
+        border: none;
+        border-top: 1px solid #D8D8D8;
+        max-width: 710px;
         margin: 0 0 55px;
     }
     &__head {
-        width: 642px;
+        max-width: 642px;
         padding: 179px 0 0 0;
     }
     &__col {
@@ -446,15 +455,16 @@ ul {
         display: flex;
         align-self: flex-end;
         margin: 237px 0 0 0;
+        width: 100%;
     }
     &__content {
-        width: 710px;
+        max-width: 710px;
     }
     ul {
         margin: 0 0 61px 0;
     }
     .text-description {
-        width: 555px;
+        max-width: 555px;
     }
 }
 
@@ -470,15 +480,14 @@ ul {
     }
     &__line {
         width: 710px;
+        height: 0;
+        border: none;
+        border-top: 1px solid #D8D8D8;
         margin: 0 0 110px 0;
     }
     &__title {
         margin: 61px 0 61px 0;
     }
-    // &__col {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
     &__item {
         display: flex;
         flex-direction: column;
@@ -487,7 +496,7 @@ ul {
     }
     ul {
         margin: 0 0 91px 0;
-        width: 450px;
+        max-width: 450px;
     }
     &__wrap-col {
         display: flex;
@@ -505,8 +514,9 @@ ul {
         padding: 150px 0 0 0;
     }
     &__line {
-        height: 1px;
-        color: #DCDBDB;
+        height: 0;
+        border: none;
+        border-top: 1px solid #D8D8D8;
         width: 710px;
         margin: 0 0 155px 0;
     }
@@ -573,12 +583,15 @@ ul {
         max-width: 930px;
     }
     &__line {
+        height: 0;
+        border: none;
+        border-top: 1px solid #D8D8D8;
         width: 930px;
         margin: 0 0 52px 0;
     }
     &__description {
         margin: 0 0 150px 0;
-        width: 678px;
+        max-width: 678px;
     }
     &__text {
         width: 555px;
@@ -595,6 +608,7 @@ ul {
     }
     img {
         margin: 0 0 56px 0;
+        width: 100%;
     }
     &__btn {
         font-weight: 600;
@@ -617,6 +631,7 @@ ul {
         }
         &__wrap {
             padding: 0 0 45px 0;
+            width: 95%;
         }
     }
     .next {
@@ -649,6 +664,325 @@ ul {
     .name {
         &__text-content {
             width: 95%;
+        }
+    }
+    .values__wrap-col {
+        width: 95%;
+    }
+    .philosophy__wrap {
+        width: 95%;
+    }
+    .learn__wrap {
+        width: 95%;
+    }
+}
+
+@media(max-width: 1020px) {
+    .about-us {
+        &__label {
+            margin: -120px auto 0 auto;
+        }
+        &__wrap {
+            padding: 0 0 15px 0;
+        }
+    }
+}
+
+@media(max-width: 930px) {
+    .learn__line {
+        width: 710px;
+    }
+    .text-title {
+        font-size: 26px;
+    }
+    .text-description {
+        word-wrap: break-word;
+    }
+    .next__content_block {
+        padding: 30px 30px 34px 30px;
+    }
+    .today__col-wrap_numbers .today__text {
+        font-size: 34px;
+    }
+    .today__content {
+        padding: 72px 30px 65px 30px;
+    }
+    .today__btn {
+        width: 100%;
+    }
+    .name__text {
+        font-size: 31px;
+    }
+    .philosophy__description {
+        width: 95%;
+    }
+}
+
+@media(max-width: 791px) {
+    .desctop-version {
+        display: none;
+    }
+    .mobile-version {
+        display: block;
+    }
+    .text-description {
+        margin: 0 20px;
+    }
+    .about-us,
+    .learn,
+    .number-one,
+    .next,
+    .comand,
+    .name,
+    .level,
+    .values,
+    .philosophy,
+    .philosophy {
+        &__line {
+            width: 530px;
+        }
+    }
+    .about-us {
+        &__wrap-col {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__wrap {
+            padding: 0 0 415px 0;
+            width: 100%;
+        }
+        &__title {
+            margin-right: 20px;
+        }
+        &__label {
+            margin: -430px auto 0 auto;
+            padding: 10px 0;
+        }
+        &__col {
+            width: 100%;
+        }
+        &__content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &__col img {
+            width: 71%;
+            margin: auto;
+        }
+        &__name {
+            font-size: 22px;
+        }
+        &__name {
+            width: 300px;
+            text-align: center;
+        }
+        &__label {
+            width: 80%;
+        }
+    }
+    .number-one {
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__head {
+            margin: 100px 0 0 0;
+            text-align: center;
+        }
+        &__title {
+            margin: 75px 20px 0 0;
+        }
+        &__col {
+            width: 100%;
+        }
+        &__desctiption {
+            max-width: 100%;
+        }
+        &__col:last-child {
+            max-width: 100%;
+        }
+        &__content {
+            align-items: flex-end;
+        }
+    }
+    .next {
+        &__content {
+            max-width: 100%;
+        }
+        &__head {
+            margin-right: 20px;
+        }
+        &__col-wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__col {
+            width: 95%;
+        }
+    }
+    .today {
+        &__col-wrap_blocks {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__col {
+            width: 95%;
+        }
+        &__col-wrap_numbers {
+            flex-direction: column;
+        }
+        &__text {
+            margin: 0 0 20px 0;
+        }
+    }
+    .comand {
+        &__col-wrap {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__col {
+            width: 95%;
+        }
+        &__text {
+            width: auto;
+        }
+        &__col:last-child {
+            align-items: flex-start;
+        }
+        &__col-wrap {
+            background-image: none;
+        }
+        &__title {
+            text-align: end;
+            margin: 0 20px 0 0;
+        }
+    }
+    .name {
+        &__head-content {
+            max-width: 100%;
+        }
+        &__text-content {
+            flex-direction: column;
+        }
+        &__text-content {
+            align-items: center;
+        }
+        &__text {
+            text-align: center;
+            margin: 40px 0 0 0;
+        }
+    }
+    .level {
+        &__col:nth-last-child(2) {
+            display: none;
+        }
+        &__wrap {
+            justify-content: flex-start;
+        }
+        &__col {
+            width: 100%;
+            align-items: flex-start;
+        }
+        &__content {
+            max-width: 100%;
+        }
+        &__head {
+            margin: 0 0 0 20px;
+        }
+    }
+    .values {
+        &__head {
+            text-align: start;
+            margin: 0 0 0 20px;
+        }
+        &__wrap-col {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            width: 100%;
+        }
+        ul {
+            max-width: 100%;
+        }
+    }
+    .philosophy {
+        &__text-content {
+            align-items: flex-end;
+        }
+        &__head {
+            margin: 0 20px 0 0;
+        }
+    }
+    .learn {
+        &__block {
+            flex-direction: column;
+        }
+        &__btn {
+            margin: 56px 0;
+        }
+        &__wrap {
+            padding: 0 0 100px 0;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__head.text-title.text-yellow {
+            width: 90%;
+            text-align: start;
+            margin: 0 0 0 20px;
+        }
+    }
+}
+
+@media(max-width: 530px) {
+    .about-us__line,
+    .learn__line,
+    .number-one__line,
+    .next__line,
+    .comand__line,
+    .name__line,
+    .level__line,
+    .values__line,
+    .philosophy__line,
+    .philosophy__line {
+        width: 100%;
+    }
+    .philosophy__block {
+        padding: 50px 0 50px 20px;
+    }
+    button.learn__btn {
+        padding: 18px 0;
+        width: 300px;
+    }
+    .name__brand {
+        font-size: 44px;
+    }
+    .text-title {
+        font-size: 22px;
+    }
+    .learn__text {
+        width: auto;
+    }
+    .about-us {
+        background-color: #0F0F10;
+        overflow: hidden;
+        &__name {
+            font-size: 19px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        .text-head {
+            font-size: 36px;
+        }
+        &__head.text-head.text-yellow {
+            margin: 0 121px 0 0;
+        }
+        &__head.about-us__head_white.text-head {
+            margin: -24px 0 0 101px;
         }
     }
 }
